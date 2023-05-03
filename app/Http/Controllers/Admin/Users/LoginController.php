@@ -12,7 +12,7 @@ class LoginController extends Controller
     public function index()
     {
         return view('admin.users.login' , [
-            'title' => 'Đăng Nhập Hệ Thống',
+            'title' => 'Đăng Nhập Hệ Thống'
         ]);
     }
 
@@ -29,9 +29,12 @@ class LoginController extends Controller
         ], $request->input('remember'))) {
 
             return redirect()->route('admin');
+            
         }
+
         Session::flash('error', 'Email hoặc Password không đúng');
-        
         return redirect()->back();
     }
 }
+
+
