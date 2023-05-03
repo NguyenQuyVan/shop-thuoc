@@ -48,6 +48,7 @@
         </div>
         @csrf
       </form>
+    </div>
     <!-- /.login-card-body -->
   </div>
 </div>
