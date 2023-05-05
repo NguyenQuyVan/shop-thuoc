@@ -15,8 +15,11 @@
 
                   <div class="form-group">
                     <label>Danh Mục</label>
-                    <select name="parent-id" class="form-control">
+                    <select name="parent_id" class="form-control">
                         <option value="0"> Danh Mục Cha </option>
+                        @foreach($menu as $menu)
+                          <option value="{{ $menu->id }}">{{ $menu->name }}</option>
+                        @endforeach
                     </select>
                   </div>
 
