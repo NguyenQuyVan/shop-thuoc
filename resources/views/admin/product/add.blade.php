@@ -9,15 +9,15 @@
 
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="menu">Tên Danh Mục</label>
-                    <input type="text" name="name" class="form-control" placeholder="Nhập tên danh mục">
+                    <label for="menu">Tên Sản Phẩm</label>
+                    <input type="text" name="name" value="{{ old('name') }}" class="form-control" placeholder="Nhập tên sản phẩm">
                   </div>
 
                   <div class="form-group">
                     <label>Danh Mục</label>
                     <select name="parent_id" class="form-control">
                         <option value="0"> Danh Mục Cha </option>
-                        @foreach($menu as $menu)
+                        @foreach($menus as $menu)
                           <option value="{{ $menu->id }}">{{ $menu->name }}</option>
                         @endforeach
                     </select>
@@ -32,6 +32,11 @@
                     <label>Mô Tả Chi Tiết</label>
                     <textarea name="content" id="content" class="form-control"></textarea>
                   </div>  
+
+                  <div class="form-group">
+                    <label for="menu">Ảnh Sản Phẩm</label>
+                    <input type="file" name="file" class="form-control" style="height: auto" id="upload">
+                  </div>
 
                 <div class="form-group">
                     <label>Kích Hoạt</label>
@@ -50,7 +55,7 @@
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Tạo Danh Mục</button>
+                  <button type="submit" class="btn btn-primary">Tạo Sản Phẩm</button>
                 </div>
                 @csrf
               </form>
