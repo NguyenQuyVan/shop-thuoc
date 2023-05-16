@@ -25,12 +25,12 @@
 
                   <div class="form-group">
                     <label>Mô Tả</label>
-                    <textarea name="description" class="form-control"></textarea>
+                    <textarea name="description" class="form-control" placeholder="Mô tả danh mục"></textarea>
                   </div>
 
                   <div class="form-group">
                     <label>Mô Tả Chi Tiết</label>
-                    <textarea name="content" id="content" class="form-control"></textarea>
+                    <textarea name="content" id="content" class="form-control" placeholder="Mô tả danh mục chi tiết"></textarea>
                   </div>  
 
                 <div class="form-group">

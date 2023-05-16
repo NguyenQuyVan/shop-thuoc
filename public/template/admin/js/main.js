@@ -10,7 +10,7 @@ function removeRow(id, url)
         $.ajax( {
             type : 'DELETE',
             datatype: 'json',
-            data : {id},
+            data : { id },
             url: url,
             success: function (result) {
                 if (result.error === false) {
@@ -40,7 +40,7 @@ $('#upload').change(function () {
         success: function (results) {
             if (results.error === false) {
                 $('#image_show').html('<a href="' + results.url + '" target="_blank">' +
-                    '<img src="' + results.url + '" width="100px"></a>');
+                    '<img src="' + results.url + '" width="500px" style="display: flex;margin: auto;"></a>');
 
                 $('#thumb').val(results.url);
             } else {

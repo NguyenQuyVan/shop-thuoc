@@ -19,7 +19,7 @@
       <div class="col-md-6">
         <div class="form-group">
           <label>Danh Mục</label>
-          <select name="parent_id" class="form-control">
+          <select name="menu_id" class="form-control">
             <option value="0"> Danh Mục Cha </option>
             @foreach($menus as $menu)
             <option value="{{ $menu->id }}">{{ $menu->name }}</option>
@@ -82,7 +82,7 @@
   <!-- /.card-body -->
 
   <div class="card-footer">
-    <button type="submit" class="btn btn-primary">Tạo Sản Phẩm</button>
+    <button type="submit" class="btn btn-primary">Thêm Sản Phẩm</button>
   </div>
   @csrf
 </form>

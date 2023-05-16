@@ -36,7 +36,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+            <i class="nav-icon fas fa-bars"></i>
               <p>
                 Danh Mục 
                 <i class="right fas fa-angle-left"></i>
@@ -55,18 +55,12 @@
                   <p>Danh Sách Danh Mục</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="/admin/menus/add" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
-                </a>
-              </li>
             </ul>
           </li>
           
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <i class="nav-icon fas fa-home"></i>
               <p>
                 Sản Phẩm 
                 <i class="right fas fa-angle-left"></i>
@@ -85,14 +79,33 @@
                   <p>Danh Sách Sản Phẩm</p>
                 </a>
               </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-images"></i>
+              <p>
+                Slider 
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/admin/menus/add" class="nav-link">
+                <a href="/admin/sliders/add" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
+                  <p>Thêm slider</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/admin/sliders/list" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh Sách sliders</p>
                 </a>
               </li>
             </ul>
           </li>
+
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
