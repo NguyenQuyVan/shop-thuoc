@@ -39,8 +39,13 @@
 
         </tbody>
     </table>
+              
+    <div class="card-footer clearfix" style="
+    justify-content: center;
+    display: flex;">
+        {!! $products->links() !!}
+    </div>
 
-    {!! $products->links() !!}
 @endsection
 
 

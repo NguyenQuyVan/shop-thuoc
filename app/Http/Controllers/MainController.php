@@ -25,8 +25,8 @@ class MainController extends Controller
     {
         return view('main', [
             'title' => 'Shop Bán Thuốc',
-            // 'sliders' => $this->slider->show(),
-            // 'menus' => $this->menu->show(),
+            'sliders' => $this->slider->show(),
+            'menus' => $this->menu->show(),
             // 'products' => $this->product->get()
         ]);
     }
