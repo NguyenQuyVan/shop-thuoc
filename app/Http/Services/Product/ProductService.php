@@ -38,4 +38,5 @@ class ProductService
             ->limit(8)
             ->get();
     }
+
 }

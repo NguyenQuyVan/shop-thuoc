@@ -6,7 +6,6 @@ use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\UploadController;
 use App\Http\Controllers\Admin\Users\LoginController;
-use App\Http\Services\UploadService;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -71,3 +70,6 @@ Route::post('/services/load-product' ,[MainController::class, 'loadProduct']);
 
 Route::get('danh-muc/{id}-{slug}.html', [App\Http\Controllers\MenuController::class, 'index']);
 Route::get('san-pham/{id}-{slug}.html', [App\Http\Controllers\ProductController::class, 'index']);
+
+Route::post('add-cart',[ App\Http\Controllers\CartController::class, 'index']);
+Route::get('carts', [App\Http\Controllers\CartController::class, 'show']);
