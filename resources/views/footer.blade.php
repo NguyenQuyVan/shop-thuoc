@@ -71,19 +71,20 @@
 					</h4>
 
 					<p class="stext-107 cl7 size-201">
-						Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
+						Liên Hệ Với Chúng Tôi Thông Qua SĐT: +84(058 337 3831) <br> 
+						Theo Dõi Chúng Tôi Trên :
 					</p>
 
 					<div class="p-t-27">
-						<a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+						<a href="https://www.facebook.com/tejimakouga" target="_blank" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
 							<i class="fa fa-facebook"></i>
 						</a>
 
-						<a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+						<a href="https://www.facebook.com/quoc.duong.12139862" target="_blank" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
 							<i class="fa fa-instagram"></i>
 						</a>
 
-						<a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+						<a href="https://www.facebook.com/duy.cat.58" target="_blank" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
 							<i class="fa fa-pinterest-p"></i>
 						</a>
 					</div>
@@ -112,23 +113,23 @@
 			<div class="p-t-40">
 				<div class="flex-c-m flex-w p-b-18">
 					<a href="#" class="m-all-1">
-						<img src="images/icons/icon-pay-01.png" alt="ICON-PAY">	
+						<img src="/template/images/icons/icon-pay-01.png" alt="ICON-PAY">	
 					</a>
 
 					<a href="#" class="m-all-1">
-						<img src="images/icons/icon-pay-02.png" alt="ICON-PAY">
+						<img src="/template/images/icons/icon-pay-02.png" alt="ICON-PAY">
 					</a>
 
 					<a href="#" class="m-all-1">
-						<img src="images/icons/icon-pay-03.png" alt="ICON-PAY">
+						<img src="/template/images/icons/icon-pay-03.png" alt="ICON-PAY">
 					</a>	
 
 					<a href="#" class="m-all-1">
-						<img src="images/icons/icon-pay-04.png" alt="ICON-PAY">
+						<img src="/template/images/icons/icon-pay-04.png" alt="ICON-PAY">
 					</a>
 
 					<a href="#" class="m-all-1">
-						<img src="images/icons/icon-pay-05.png" alt="ICON-PAY">
+						<img src="/template/images/icons/icon-pay-05.png" alt="ICON-PAY">
 					</a>
 				</div>
 

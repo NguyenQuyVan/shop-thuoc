@@ -4,10 +4,10 @@
 <head>
     @include('admin.head')
 </head>
-<body class="hold-transition login-page">
+<body class="hold-transition" id="login">
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index2.html"><b>Admin</b>LTE</a>
+    <a href="../../index2.html">SIX<b>Medical</b></a>
   </div>
   <!-- /.login-logo -->
   <div class="card">

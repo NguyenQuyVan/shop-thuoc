@@ -18,4 +18,20 @@
     .hidden{
       display: none;
     }
+    #login {
+      align-items: center;
+      background-image: url('../../../template/images/imageBG.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      /* background-size: cover; */
+      /* background-position: center; */
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      height: 100vh;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
   </style>
