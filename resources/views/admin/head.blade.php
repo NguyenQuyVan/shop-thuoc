@@ -5,6 +5,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
+  <link rel="icon" type="image/png" href="/template/images/icons/favicon1-.png"/>
   <link rel="stylesheet" href="/template/admin/plugins/fontawesome-free/css/all.min.css">
   <!-- icheck bootstrap -->
   <link rel="stylesheet" href="/template/admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
@@ -20,7 +21,7 @@
     }
     #login {
       align-items: center;
-      background-image: url('../../../template/images/imageBG.jpg');
+      background-image: url('../../../template/images/login-bg.jpg');
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: 100% 100%;

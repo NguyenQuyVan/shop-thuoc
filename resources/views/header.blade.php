@@ -4,13 +4,36 @@
 	<!-- Header desktop -->
 	<div class="container-menu-desktop">
 
+		<div class="top-bar">
+			<div class="content-topbar flex-sb-m h-full container">
+				<div class="left-top-bar">
+					Hotline đặt hàng miễn phí &nbsp;
+					<i class="fa fa-phone" aria-hidden="true"></i> 0374001550
+				</div>
+
+				<div class="right-top-bar flex-w h-full">
+					<a href="#" class="flex-c-m trans-04 p-lr-25">
+						Help &amp; FAQs
+					</a>
+
+					<a href="/admin/users/register" class="flex-c-m trans-04 p-lr-25">
+						Đăng ký
+					</a>					
+
+					<a href="/admin/users/login" class="flex-c-m trans-04 p-lr-25">
+						Đăng Nhập &nbsp;
+						<h5><i class="fa fa-sign-in" aria-hidden="true"></i></h5>
+					</a>
+				</div>
+			</div>
+		</div>
 
 		<div class="wrap-menu-desktop">
 			<nav class="limiter-menu-desktop container">
 
 				<!-- Logo desktop -->
 				<a href="/" class="logo">
-					<img src="/template/images/icons/logo-01.png" alt="IMG-LOGO">
+					<img src="/template/images/icons/Brigita-removebg-preview(1).png" alt="IMG-LOGO">
 				</a>
 
 				<!-- Menu desktop -->
@@ -49,7 +72,7 @@
 	<div class="wrap-header-mobile">
 		<!-- Logo moblie -->
 		<div class="logo-mobile">
-			<a href="index.html"><img src="/template/images/icons/logo-01.png" alt="IMG-LOGO"></a>
+			<a href="index.html"><img src="/template/images/icons/Brigita-removebg-preview(1).png" alt="IMG-LOGO"></a>
 		</div>
 
 		<!-- Icon header -->

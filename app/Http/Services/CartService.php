@@ -32,7 +32,7 @@ class CartService
 
         $exists = Arr::exists($carts, $product_id);
         if ($exists) {       
-            $carts[$product_id] = $carts[$product_id] + $qty; 
+            $carts[$product_id] = $carts[$product_id] + $qty;
             Session::put('carts', $carts);
             return true;
         }
@@ -92,6 +92,11 @@ class CartService
 
             DB::commit();
             Session::flash('success','Đặt hàng thành công');
+
+
+            #Queue
+            SendMail::dispatch($request->input('email'))->delay(now()->addSeconds(5));
+
             Session::forget('carts');
         } catch (\Exception $err) {
             DB::rollBack();
@@ -119,5 +124,28 @@ class CartService
         }
 
         return Cart::insert($data);
+    }
+
+    public function getCustomer()
+    {
+        return Customer::orderByDesc('id')->paginate(15);
+    }
+
+    public function getProductForCart($customer)
+    {
+        return $customer -> carts()->with(['product' => function($query){
+            $query->select('id','name','thumb');
+        }])->get();
+    }
+    
+    public function delete($request)
+    {
+        $cart = Cart::where('id', $request->input('id'))->first();
+        if ($cart) {
+            $cart->delete();
+            return true;
+        }
+
+        return false;
     }
 }

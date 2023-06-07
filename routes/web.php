@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\CartController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\Admin\MenuController;
 use App\Http\Controllers\Admin\ProductController;
@@ -20,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('admin/users/login', [LoginController::class, 'index'])->name('login');
+Route::get('admin/users/register', [LoginController::class, 'register'])->name('register');
 Route::post('admin/users/login/store', [LoginController::class, 'store']);
 
 
@@ -62,6 +64,11 @@ Route::middleware(['auth'])->group(function () {
 
                 #Upload
                 Route::post('upload/services', [UploadController::class, 'store']);
+
+                #Cart
+                Route::get('customers', [CartController::class, 'index']);
+                Route::get('customers/view/{customer}', [\App\Http\Controllers\Admin\CartController::class, 'show']);
+                Route::DELETE('destroy', [CartController::class, 'destroy']);
         });
 });
 

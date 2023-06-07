@@ -27,13 +27,15 @@
 								</div>
 
 								<div class="header-cart-item-txt p-t-8">
-									<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
+									<a href="/san-pham/{{ $product->id }}-{{ \Str::slug($product->name, '-') }}.html" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
 										{{ $product->name }}
 									</a>
 
 									<span class="header-cart-item-info">
-										{!! $price !!}
+										{!! $price !!} &nbsp;
+										<a class="" href="/carts/delete/{{ $product->id }}">xóa</a>
 									</span>
+
 								</div>
 							</li>
 						@endforeach

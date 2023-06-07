@@ -16,6 +16,13 @@ class LoginController extends Controller
         ]);
     }
 
+    public function register()
+    {
+        return view('admin.users.register' , [
+            'title' => 'Đăng Ký Tài Khoản'
+        ]);
+    }
+
     public function store(Request $request)
     {
 

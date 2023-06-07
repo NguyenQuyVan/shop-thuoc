@@ -1,6 +1,6 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="/admin/" class="brand-link">
+    <a href="/admin" class="brand-link">
       <img src="/template/admin/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">SIX MeDiCal</span>
     </a>
@@ -13,7 +13,7 @@
           <img src="/template/admin/dist/img/user1-128x128.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">NGUYỄN QUÝ VĂ<Nav></Nav></a>
+          <a href="/admin" class="d-block">NGUYỄN QUÝ VĂN<Nav></Nav></a>
         </div>
       </div>
 
@@ -45,13 +45,13 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="/admin/menus/add" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fa fa-plus-circle nav-icon"></i>
                   <p>Thêm Danh Mục</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="/admin/menus/list" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fa fa-list-alt nav-icon"></i>
                   <p>Danh Sách Danh Mục</p>
                 </a>
               </li>
@@ -69,13 +69,13 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="/admin/products/add" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fa fa-cart-plus nav-icon"></i>
                   <p>Thêm Sản Phẩm</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="/admin/products/list" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fa fa-sticky-note nav-icon"></i>
                   <p>Danh Sách Sản Phẩm</p>
                 </a>
               </li>
@@ -93,16 +93,35 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="/admin/sliders/add" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fa fa-puzzle-piece nav-icon"></i>
                   <p>Thêm slider</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="/admin/sliders/list" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fa fa-object-group nav-icon"></i>
                   <p>Danh Sách sliders</p>
                 </a>
               </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa-shopping-cart"></i>
+              <p>
+                Giỏ hàng
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/admin/customers" class="nav-link">
+                  <i class="fa fa-list-alt nav-icon"></i>
+                  <p>Danh Sách Đơn Hàng</p>
+                </a>
+              </li>
+
             </ul>
           </li>
 
