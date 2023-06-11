@@ -13,26 +13,28 @@
   <link rel="stylesheet" href="/template/admin/dist/css/adminlte.min.css">
   <meta name="csrf-token" content="{{ csrf_token() }}">
   
+  <link rel="stylesheet" type="text/css" href="/template/admin/dist/css/app.css">
   @yield('head')
 
   <style>
-    .hidden{
-      display: none;
-    }
-    #login {
-      align-items: center;
-      background-image: url('../../../template/images/login-bg.jpg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: 100% 100%;
-      /* background-size: cover; */
-      /* background-position: center; */
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      height: 100vh;
-      -ms-flex-pack: center;
-      justify-content: center;
-    }
+    .hidden {
+    display: none;
+}
+
+#login {
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../../template/images/login-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    /* background-size: cover; */
+    /* background-position: center; */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh;
+    -ms-flex-pack: center;
+}
   </style>

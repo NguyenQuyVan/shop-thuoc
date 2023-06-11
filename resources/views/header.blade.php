@@ -16,14 +16,21 @@
 						Help &amp; FAQs
 					</a>
 
-					<a href="/admin/users/register" class="flex-c-m trans-04 p-lr-25">
-						Đăng ký
-					</a>					
+					<button id="signupButton">
+						<a href="/admin/users/register" class="flex-c-m trans-04 p-lr-25">
+							Đăng ký
+						</a>					
+					</button>
 
-					<a href="/admin/users/login" class="flex-c-m trans-04 p-lr-25">
-						Đăng Nhập &nbsp;
-						<h5><i class="fa fa-sign-in" aria-hidden="true"></i></h5>
-					</a>
+					<button id="signupButton">
+						<a href="/admin/users/login" class="flex-c-m trans-04 p-lr-25">
+							Đăng Nhập &nbsp;
+							<h5><i class="fa fa-sign-in" aria-hidden="true"></i></h5>
+						</a>
+					</button>
+
+					<button id="logoutButton" class="hidden">Đăng xuất</button>
+
 				</div>
 			</div>
 		</div>
@@ -109,7 +116,7 @@
 			{!! $menusHtml !!}
 
 			<li>
-				<a href="contact.html">Liên Hệ</a>
+				<a href="about.html">Về Chúng Tôi</a>
 			</li>
 		</ul>
 	</div>
