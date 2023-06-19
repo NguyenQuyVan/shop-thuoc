@@ -21,9 +21,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('admin/users/login', [LoginController::class, 'index'])->name('login');
-Route::get('admin/users/register', [LoginController::class, 'register'])->name('register');
+// Route::get('admin/users/register', [LoginController::class, 'register'])->name('register');
 Route::post('admin/users/login/store', [LoginController::class, 'store']);
+ 
+// Đăng xuất
+Route::get('logout', [ 'as' => 'logout', 'uses' => 'Auth\LogoutController@getLogout']);
 
+// Đăng ký thành viên
+Route::get('register', [App\Http\Controllers\Admin\Users\RegisterController::class, 'getRegister']);
+
+Route::get('register', 'Admin\RegisterController@getRegister');
+Route::post('register', 'Admin\RegisterController@postRegister');
 
 Route::middleware(['auth'])->group(function () {
 
@@ -83,4 +91,6 @@ Route::get('carts', [App\Http\Controllers\CartController::class, 'show']);
 Route::post('update-cart', [App\Http\Controllers\CartController::class, 'update']);
 Route::get('carts/delete/{id}', [App\Http\Controllers\CartController::class, 'remove']);
 Route::post('carts', [App\Http\Controllers\CartController::class, 'addCart']);
+
+
 
